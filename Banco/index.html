@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Banco</title>
+</head>
+<body>
+    <h1>APP BANCO</h1>
+    <div class="Contenedor">
+        <form id="Informacion">
+            <div class="i">
+                <label for="Nombre">Nombres</label>
+                <input type="text"  id="Nombre" placeholder="Escribe tu Nombre">
+            </div>
+            <div class="i">
+                <label for="Cedula">Cedula</label>
+                <input type="text" id="Cedula" placeholder="Escribe tu Cédula">
+            </div>
+           <br>
+           <select id="D_Ini">
+            <option value="Banpro">BANPRO</option>
+            <option value="Bdf">BDF</option>
+            <option value="Bancentro">BANCENTRO</option>
+            <option value="Avant">AVANTS</option>
+            </select>
+        </form> 
+    </div>
+    <hr><hr>
+    <h1>TIPO DE PRODUCTO</h1>
+    <div class="Calculo">
+        <form action="Monto_C"></form>
+        <div class="e">
+            <label for="Monto"> Monto</label>
+            <input type="number"  id="Monto" placeholder="Monto">
+        </div>
+    </div>
+    <div id="D_Fin">
+        <select id="">
+            <option value="Cpd">CPD</option>
+            <option value="Bdf">BDF</option>
+            <option value="Bancentro">BANCENTRO</option>
+            <option value="Avant">AVANTS</option>
+            </select>
+        <form action="Monto_C"></form>
+        <div class="a">
+            <label for="CPD"> CPD </label>
+            <input  value= "Cpd" type="checkbox" id="CPD">
+        </div>
+        <div class="a"></div>
+            <label for="Cuenta_2"> Cuenta 2%</label>
+            <input value = "Cuenta1" type="checkbox" id="Cuenta_2">
+        </div>
+        <div class="a"></div>
+            <label  for="Cuenta_5"> Cuenta 5%</label>
+            <input value="Cuenta2" type="checkbox" id="Cuenta_5">
+        </div>
+        <div class="a"></div>
+            <label for="CPD_2"> CPD 2</label>
+            <input value="Cpd_2" type="checkbox" id="CPD_2">
+        </div>
+        <br><br>
+        <button type="button" id="Boton" onclick="Persona.Calculo();"> Calcular</button>
+    </div>
+    <div id="Respuesta"> </div>
+    <hr><hr>
+    <script src="./js/app.js"></script>
+</body>
+</html>
